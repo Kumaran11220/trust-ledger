@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trust Ledger</title>
+</head>
+<body>
+    <h1>Data Trust Ledger</h1>
+
+    <input id="name" placeholder="Dataset Name">
+    <input id="source" placeholder="Source (gov/private/unknown)">
+    <input id="edits" type="number" placeholder="Number of edits">
+    <button onclick="addData()">Add</button>
+
+    <h2>Ledger</h2>
+    <ul>
+        {% for block in ledger %}
+        <li>
+            {{ block.data.dataset }} - Trust: {{ block.data.trust_score }}
+        </li>
+        {% endfor %}
+    </ul>
+
+<script>
+function addData() {
+    fetch('/add', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+            name: document.getElementById('name').value,
+            source: document.getElementById('source').value,
+            edits: parseInt(document.getElementById('edits').value)
+        })
+    })
+    .then(res => res.json())
+    .then(data => {
+        alert("Trust Score: " + data.trust_score);
+        location.reload();
+    });
+}
+</script>
+
+</body>
+</html>
