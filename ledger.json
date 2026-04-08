@@ -20,5 +20,17 @@
         "timestamp": "1775625872.7754915",
         "prev_hash": "dabe9273eb88df374efad516dcbf10bf1eead4c746a259a7527045cc9c584027",
         "hash": "aad6cabe8098973e0ff2aacf76a7fdce33f930dc0103a4c96a7342c29ff83a2d"
+    },
+    {
+        "data": {
+            "dataset": "Test",
+            "source": "gov",
+            "edits": 2,
+            "trust_score": 90,
+            "hash_id": "c033bb98477990096365a2a51382eab8cb468457a2a6ca06c861aa97129ba3c6"
+        },
+        "timestamp": "1775629490.5462072",
+        "prev_hash": "aad6cabe8098973e0ff2aacf76a7fdce33f930dc0103a4c96a7342c29ff83a2d",
+        "hash": "f0512c2768844b738a828a68c5c61e1fe46a450ce07a54a54aed6de7f32b1d8f"
     }
 ]
