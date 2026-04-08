@@ -283,5 +283,20 @@
         "prev_hash": "1ac7ccb8cc48f0568eff203301bdf0fc9a9be232f64de86656d5bcda7b4ba51b",
         "hash": "70e5a41e3e95027cd8be1a92a896c5f67329d143a8f084b7ae20522980c4212d",
         "block_height": 18
+    },
+    {
+        "data": {
+            "dataset": "Birth Rate",
+            "source": "unknown",
+            "verification_count": 1,
+            "trust_score": 52,
+            "risk_level": "HIGH",
+            "consensus_level": "Weak",
+            "consensus_message": "Weak Consensus"
+        },
+        "timestamp": "1775640143.4421923",
+        "prev_hash": "70e5a41e3e95027cd8be1a92a896c5f67329d143a8f084b7ae20522980c4212d",
+        "hash": "7658e0a429481117dfc929ee532f57755b2c62b5567fc8aae1aa5785bb01dee0",
+        "block_height": 19
     }
 ]
