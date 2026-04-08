@@ -241,4 +241,6 @@ def api_verify_consensus(index):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    import logging
+    logging.getLogger('werkzeug').setLevel(logging.ERROR)
+    app.run(debug=False)
