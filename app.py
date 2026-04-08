@@ -3,6 +3,10 @@ import hashlib
 import json
 import time
 
+def generate_data_hash(name, source, edits):
+    raw = f"{name}-{source}-{edits}"
+    return hashlib.sha256(raw.encode()).hexdigest()
+
 app = Flask(__name__)
 
 # Load ledger
@@ -51,12 +55,14 @@ def home():
 def add():
     data = request.json
     trust = calculate_trust_score(data['source'], data['edits'])
+    data_hash = generate_data_hash(data['name'], data['source'], data['edits'])
 
     block_data = {
         "dataset": data['name'],
         "source": data['source'],
         "edits": data['edits'],
-        "trust_score": trust
+        "trust_score": trust,
+        "hash_id": data_hash
     }
 
     add_block(block_data)
