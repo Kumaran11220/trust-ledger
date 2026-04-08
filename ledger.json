@@ -2,35 +2,76 @@
     {
         "data": {
             "dataset": "Census",
-            "source": "gov",
-            "edits": 1,
-            "trust_score": 95
+            "source": "government",
+            "verification_count": 3,
+            "trust_score": 100,
+            "risk_level": "LOW",
+            "consensus_level": "Strong",
+            "consensus_message": "Strong Consensus"
         },
-        "timestamp": "1775625826.8032386",
+        "timestamp": "1775637213.287592",
         "prev_hash": "0",
-        "hash": "dabe9273eb88df374efad516dcbf10bf1eead4c746a259a7527045cc9c584027"
+        "hash": "aad90537f6fd5b165479cfd66ff1618a7b85d6189ebb9f1a4522fb6aad7ac427",
+        "block_height": 0
     },
     {
         "data": {
-            "dataset": "Random Data",
+            "dataset": "Census",
+            "source": "private",
+            "verification_count": 3,
+            "trust_score": 100,
+            "risk_level": "LOW",
+            "consensus_level": "Strong",
+            "consensus_message": "Strong Consensus"
+        },
+        "timestamp": "1775637239.3747964",
+        "prev_hash": "aad90537f6fd5b165479cfd66ff1618a7b85d6189ebb9f1a4522fb6aad7ac427",
+        "hash": "ef5488a8f2f951e9b45295ac1bfbbc092e6fbb33e48b00ded1c988f37ecd6de9",
+        "block_height": 1
+    },
+    {
+        "data": {
+            "dataset": "Census",
             "source": "unknown",
-            "edits": 5,
-            "trust_score": 45
+            "verification_count": 3,
+            "trust_score": 87,
+            "risk_level": "LOW",
+            "consensus_level": "Strong",
+            "consensus_message": "Strong Consensus"
         },
-        "timestamp": "1775625872.7754915",
-        "prev_hash": "dabe9273eb88df374efad516dcbf10bf1eead4c746a259a7527045cc9c584027",
-        "hash": "aad6cabe8098973e0ff2aacf76a7fdce33f930dc0103a4c96a7342c29ff83a2d"
+        "timestamp": "1775637264.195411",
+        "prev_hash": "ef5488a8f2f951e9b45295ac1bfbbc092e6fbb33e48b00ded1c988f37ecd6de9",
+        "hash": "cc956b76100334e22755bb670d30af0970fbfc123a20dca375648afcb4d1ee15",
+        "block_height": 2
     },
     {
         "data": {
-            "dataset": "Test",
-            "source": "gov",
-            "edits": 2,
-            "trust_score": 90,
-            "hash_id": "c033bb98477990096365a2a51382eab8cb468457a2a6ca06c861aa97129ba3c6"
+            "dataset": "EV Production",
+            "source": "research",
+            "verification_count": 1,
+            "trust_score": 74,
+            "risk_level": "HIGH",
+            "consensus_level": "Weak",
+            "consensus_message": "Weak Consensus"
         },
-        "timestamp": "1775629490.5462072",
-        "prev_hash": "aad6cabe8098973e0ff2aacf76a7fdce33f930dc0103a4c96a7342c29ff83a2d",
-        "hash": "f0512c2768844b738a828a68c5c61e1fe46a450ce07a54a54aed6de7f32b1d8f"
+        "timestamp": "1775637285.6679285",
+        "prev_hash": "cc956b76100334e22755bb670d30af0970fbfc123a20dca375648afcb4d1ee15",
+        "hash": "74dc14ac7381787baa1f410250a9e45ce9407527a70003880e6f21aff66b75b6",
+        "block_height": 3
+    },
+    {
+        "data": {
+            "dataset": "Birth rate",
+            "source": "unknown",
+            "verification_count": 1,
+            "trust_score": 52,
+            "risk_level": "HIGH",
+            "consensus_level": "Weak",
+            "consensus_message": "Weak Consensus"
+        },
+        "timestamp": "1775637326.7463608",
+        "prev_hash": "74dc14ac7381787baa1f410250a9e45ce9407527a70003880e6f21aff66b75b6",
+        "hash": "303946dc2d6dde0cbcc8df8c427b7ff57e475abd7a90cc3e6dfeacb84817602b",
+        "block_height": 4
     }
 ]
