@@ -3,7 +3,7 @@
         "data": {
             "dataset": "Census",
             "source": "government",
-            "verification_count": 3,
+            "verification_count": 5,
             "trust_score": 100,
             "risk_level": "LOW",
             "consensus_level": "Strong",
@@ -18,8 +18,8 @@
         "data": {
             "dataset": "Census",
             "source": "private",
-            "verification_count": 3,
-            "trust_score": 100,
+            "verification_count": 5,
+            "trust_score": 95,
             "risk_level": "LOW",
             "consensus_level": "Strong",
             "consensus_message": "Strong Consensus"
@@ -33,8 +33,8 @@
         "data": {
             "dataset": "Census",
             "source": "unknown",
-            "verification_count": 3,
-            "trust_score": 87,
+            "verification_count": 5,
+            "trust_score": 82,
             "risk_level": "LOW",
             "consensus_level": "Strong",
             "consensus_message": "Strong Consensus"
@@ -48,11 +48,11 @@
         "data": {
             "dataset": "EV Production",
             "source": "research",
-            "verification_count": 1,
-            "trust_score": 74,
-            "risk_level": "HIGH",
-            "consensus_level": "Weak",
-            "consensus_message": "Weak Consensus"
+            "verification_count": 4,
+            "trust_score": 89,
+            "risk_level": "LOW",
+            "consensus_level": "Strong",
+            "consensus_message": "Strong Consensus"
         },
         "timestamp": "1775637285.6679285",
         "prev_hash": "cc956b76100334e22755bb670d30af0970fbfc123a20dca375648afcb4d1ee15",
@@ -108,7 +108,7 @@
         "data": {
             "dataset": "Census",
             "source": "government",
-            "verification_count": 3,
+            "verification_count": 5,
             "trust_score": 100,
             "risk_level": "LOW",
             "consensus_level": "Strong",
@@ -118,5 +118,170 @@
         "prev_hash": "bda2908e4333c5f6dfe40b1ca661d501c2c08f73742fbe2dd7b4bdf721cd08bd",
         "hash": "d864e0dc708d24ecf54acf2b38e8ae2435ff7c1ce01319a912704432ed9cc0e9",
         "block_height": 7
+    },
+    {
+        "data": {
+            "dataset": "EV Production",
+            "source": "private",
+            "verification_count": 4,
+            "trust_score": 80,
+            "risk_level": "LOW",
+            "consensus_level": "Strong",
+            "consensus_message": "Strong Consensus"
+        },
+        "timestamp": "1775638824.458449",
+        "prev_hash": "d864e0dc708d24ecf54acf2b38e8ae2435ff7c1ce01319a912704432ed9cc0e9",
+        "hash": "067ef1eba4db66a662648e061037aa4f43153c5a0c0a3176d3b66e016cbc3607",
+        "block_height": 8
+    },
+    {
+        "data": {
+            "dataset": "EV Production",
+            "source": "unknown",
+            "verification_count": 4,
+            "trust_score": 67,
+            "risk_level": "LOW",
+            "consensus_level": "Strong",
+            "consensus_message": "Strong Consensus"
+        },
+        "timestamp": "1775638840.2666168",
+        "prev_hash": "067ef1eba4db66a662648e061037aa4f43153c5a0c0a3176d3b66e016cbc3607",
+        "hash": "78d350fcd51129f43038cdf9e4b5ae2663a732a8b5c25c2335bddb735c9576be",
+        "block_height": 9
+    },
+    {
+        "data": {
+            "dataset": "EV Production",
+            "source": "unverified",
+            "verification_count": 4,
+            "trust_score": 61,
+            "risk_level": "LOW",
+            "consensus_level": "Strong",
+            "consensus_message": "Strong Consensus"
+        },
+        "timestamp": "1775638867.4449546",
+        "prev_hash": "78d350fcd51129f43038cdf9e4b5ae2663a732a8b5c25c2335bddb735c9576be",
+        "hash": "8c07c23534df6e6e351ff745e9c9807d67456d58120f001bc18c4d5c629983af",
+        "block_height": 10
+    },
+    {
+        "data": {
+            "dataset": "Census",
+            "source": "unverified",
+            "verification_count": 5,
+            "trust_score": 76,
+            "risk_level": "LOW",
+            "consensus_level": "Strong",
+            "consensus_message": "Strong Consensus"
+        },
+        "timestamp": "1775638875.5137703",
+        "prev_hash": "8c07c23534df6e6e351ff745e9c9807d67456d58120f001bc18c4d5c629983af",
+        "hash": "c3a958c8a8fe5e06524c38082374f692f42990ebabb206bfcb391dccb60151b4",
+        "block_height": 11
+    },
+    {
+        "data": {
+            "dataset": "Census",
+            "source": "unknown",
+            "verification_count": 5,
+            "trust_score": 82,
+            "risk_level": "LOW",
+            "consensus_level": "Strong",
+            "consensus_message": "Strong Consensus"
+        },
+        "timestamp": "1775638883.4538963",
+        "prev_hash": "c3a958c8a8fe5e06524c38082374f692f42990ebabb206bfcb391dccb60151b4",
+        "hash": "a3af2262f9ece5bfdde559531efcb0855830b51e3a8f7dad54723a448b72cdd1",
+        "block_height": 12
+    },
+    {
+        "data": {
+            "dataset": "census",
+            "source": "unverified",
+            "verification_count": 5,
+            "trust_score": 76,
+            "risk_level": "LOW",
+            "consensus_level": "Strong",
+            "consensus_message": "Strong Consensus"
+        },
+        "timestamp": "1775639248.7144141",
+        "prev_hash": "a3af2262f9ece5bfdde559531efcb0855830b51e3a8f7dad54723a448b72cdd1",
+        "hash": "718974e0f843a09876e0c495f57f00be4eebce79f21da344a298d640da45e7f9",
+        "block_height": 13
+    },
+    {
+        "data": {
+            "dataset": "Census",
+            "source": "unknown",
+            "verification_count": 5,
+            "trust_score": 82,
+            "risk_level": "LOW",
+            "consensus_level": "Strong",
+            "consensus_message": "Strong Consensus"
+        },
+        "timestamp": "1775639257.1621616",
+        "prev_hash": "718974e0f843a09876e0c495f57f00be4eebce79f21da344a298d640da45e7f9",
+        "hash": "bdbc30a4365b8b577e154be98b7e5e116be32e1c5c1e1a5d3a9169a639a7e812",
+        "block_height": 14
+    },
+    {
+        "data": {
+            "dataset": "Ev production",
+            "source": "unverified",
+            "verification_count": 4,
+            "trust_score": 61,
+            "risk_level": "LOW",
+            "consensus_level": "Strong",
+            "consensus_message": "Strong Consensus"
+        },
+        "timestamp": "1775639467.9168174",
+        "prev_hash": "bdbc30a4365b8b577e154be98b7e5e116be32e1c5c1e1a5d3a9169a639a7e812",
+        "hash": "9333c28d9c04cc6eb97a9aed0775ce95c94d1476b4cd210845bbcd6f9d60fffd",
+        "block_height": 15
+    },
+    {
+        "data": {
+            "dataset": "ev production",
+            "source": "unknown",
+            "verification_count": 4,
+            "trust_score": 67,
+            "risk_level": "LOW",
+            "consensus_level": "Strong",
+            "consensus_message": "Strong Consensus"
+        },
+        "timestamp": "1775639488.8038018",
+        "prev_hash": "9333c28d9c04cc6eb97a9aed0775ce95c94d1476b4cd210845bbcd6f9d60fffd",
+        "hash": "ffd192ef85bea6444bfdacb2d1ada79edc4a46de5f7857e9a64edfe5d357f9fc",
+        "block_height": 16
+    },
+    {
+        "data": {
+            "dataset": "census",
+            "source": "unknown",
+            "verification_count": 5,
+            "trust_score": 82,
+            "risk_level": "LOW",
+            "consensus_level": "Strong",
+            "consensus_message": "Strong Consensus"
+        },
+        "timestamp": "1775639501.7198408",
+        "prev_hash": "ffd192ef85bea6444bfdacb2d1ada79edc4a46de5f7857e9a64edfe5d357f9fc",
+        "hash": "1ac7ccb8cc48f0568eff203301bdf0fc9a9be232f64de86656d5bcda7b4ba51b",
+        "block_height": 17
+    },
+    {
+        "data": {
+            "dataset": "census",
+            "source": "verified_org",
+            "verification_count": 5,
+            "trust_score": 100,
+            "risk_level": "LOW",
+            "consensus_level": "Strong",
+            "consensus_message": "Strong Consensus"
+        },
+        "timestamp": "1775639516.800713",
+        "prev_hash": "1ac7ccb8cc48f0568eff203301bdf0fc9a9be232f64de86656d5bcda7b4ba51b",
+        "hash": "70e5a41e3e95027cd8be1a92a896c5f67329d143a8f084b7ae20522980c4212d",
+        "block_height": 18
     }
 ]

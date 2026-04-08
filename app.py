@@ -52,8 +52,25 @@ def normalize_source(source):
     return source.strip().lower()
 
 
+def source_weight(source):
+    """Return reliability weight for a source used in weighted cross-verification."""
+    weights = {
+        'government': 1.0,
+        'gov': 1.0,
+        'verified_org': 0.8,
+        'private': 0.6,
+        'unknown': 0.2
+    }
+    return weights.get(normalize_source(source), weights['unknown'])
+
+
 def reputation_score(source):
     return SOURCE_REPUTATION.get(normalize_source(source), SOURCE_REPUTATION['unknown'])
+
+
+def source_score(source):
+    """Convert a source reputation into a base trust score."""
+    return reputation_score(source) * 55 + 20
 
 
 def verification_count(dataset_name):
@@ -66,15 +83,26 @@ def verification_count(dataset_name):
     return len(sources)
 
 
-def calculate_trust_score(source, count):
-    base = reputation_score(source) * 55 + 20
-    if count >= 3:
-        bonus = 45
-    elif count == 2:
-        bonus = 25
-    else:
-        bonus = 10
-    return min(100, int(base + bonus))
+def cross_verify(dataset_name):
+    """Compute a weighted consensus score from unique dataset sources."""
+    normalized = normalize_dataset(dataset_name)
+    unique_sources = {
+        normalize_source(block.get('data', {}).get('source', 'unknown'))
+        for block in ledger
+        if normalize_dataset(block.get('data', {}).get('dataset', '')) == normalized
+    }
+    total_weight = sum(source_weight(source) for source in unique_sources)
+
+    if total_weight >= 2.0:
+        return 40
+    if total_weight >= 1.2:
+        return 25
+    return 10
+
+
+def calculate_trust_score(source, dataset_name):
+    score = source_score(source) + cross_verify(dataset_name)
+    return min(100, int(score))
 
 
 def calculate_risk_level(count):
@@ -109,7 +137,7 @@ def refresh_dataset_blocks(dataset_name):
         if normalize_dataset(block.get('data', {}).get('dataset', '')) == normalize_dataset(dataset_name):
             source = block['data'].get('source', 'unknown')
             block['data']['verification_count'] = count
-            block['data']['trust_score'] = calculate_trust_score(source, count)
+            block['data']['trust_score'] = calculate_trust_score(source, dataset_name)
             block['data']['risk_level'] = calculate_risk_level(count)
             consensus = consensus_data(count)
             block['data']['consensus_level'] = consensus['strength']
